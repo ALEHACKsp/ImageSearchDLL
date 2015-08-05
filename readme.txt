@@ -1,4 +1,4 @@
-The ImageSearchDLL exported One function:
+﻿The ImageSearchDLL exported One function:
 char* ImageSearch(
 	int aLeft, 
 	int aTop, 
@@ -9,7 +9,7 @@ char* ImageSearch(
 	
 [parameters]:
 Here aLeft,aTop,aRight and aBottom specify the area to search in screen.
-If you want to search in whole screen, you can set that parameters to (0,0,screen_height,screen_width)
+If you want to search in whole screen, you can set that parameters to (0,0,screen_width,screen_height)
 
 aImageFile specify the path of the image to be searched in harddisk.  More, you can add some instruction before the path to use some advanced function. The mostly useful is specify the tolerance like "*tolerance_number your_path_string", for examble "*32 C:\\test.bmp". tolerance_number are ranged from 0 to 255. 
 
