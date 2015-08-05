@@ -1,3 +1,0 @@
-LIBRARY ImageSearchDLL
-EXPORTS
-   ImageSearch   @1
