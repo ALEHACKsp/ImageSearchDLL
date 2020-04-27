@@ -2,6 +2,7 @@
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 The ImageSearchDLL exported One function:
+```
 char* ImageSearch(
 	int aLeft, 
 	int aTop, 
@@ -9,12 +10,12 @@ char* ImageSearch(
 	int aBottom, 
 	char *aImageFile, 
 	HBITMAP hbitmap_search);
-	
+```
 [parameters]:
 Here aLeft,aTop,aRight and aBottom specify the area to search in screen.
 If you want to search in whole screen, you can set that parameters to (0,0,screen_width,screen_height)
 
-aImageFile specify the path of the image to be searched in harddisk.  More, you can add some instruction before the path to use some advanced function. The mostly useful is specify the tolerance like "*tolerance_number your_path_string", for examble "*32 C:\\test.bmp". tolerance_number are ranged from 0 to 255. 
+aImageFile specify the path of the image to be searched in harddisk.  More, you can add some instruction before the path to use some advanced function. The mostly useful is specify the tolerance like `"*tolerance_number your_path_string"`, for examble `"*32 C:\\test.bmp"`. tolerance_number are ranged from 0 to 255. 
 
 If you want to search a picture that you already have it's HANDLE,you can send this HANDLE to hbitmap_search, in this way, you don't need specify the image's path by aImageFile.
 
